@@ -1,5 +1,5 @@
 <?php
-    include '../modeles/classeAjout.php';
+    include '../modeles/classeContact.php';
 if(isset($_POST['ajouter'])){
 
 $id = (int)$_POST['id_contact'];

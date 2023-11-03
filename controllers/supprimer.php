@@ -9,7 +9,7 @@ if (isset($_POST["supprimer"])){
 
     }else{
 
-        include '../modeles/classeAjout.php';
+        include '../modeles/classeContact.php';
         $Contacts1 = new Contacts("falu","mop","775675641",1);
         $Contacts1->SuppressionContact($supprimer,$db);
     }

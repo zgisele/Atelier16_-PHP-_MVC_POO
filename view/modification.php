@@ -1,7 +1,7 @@
 <?php
 if (isset ($_POST['modifier'])){
     $id = (int)$_POST['modifier'];
-        include '../modeles/classeAjout.php';
+        include '../modeles/classeContact.php';
         // include '../modeles/classeBase.php';
         $sql = "SELECT * FROM `contacts`where id_contact = $id";
 

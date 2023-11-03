@@ -13,7 +13,7 @@ if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['telephone'])
 
     }else{
 
-         include '../modeles/classeAjout.php';
+         include '../modeles/classeContact.php';
         $Contacts1 = new Contacts($nom,$prenom,$telephone,$favori);
         $Contacts1->AjoutContact($db);
 

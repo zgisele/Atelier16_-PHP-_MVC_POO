@@ -37,7 +37,7 @@
         </div>
 
         <?php
-            include '../modeles/classeAjout.php';
+            include '../modeles/classeContact.php';
             $sql = "SELECT * FROM `contacts`";
             $stm = $db->query($sql);
             $utilisateurs = $stm->fetchAll(PDO::FETCH_ASSOC);
