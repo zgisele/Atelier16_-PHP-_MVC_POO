@@ -14,9 +14,6 @@ class Contacts{
         $this->setprenom($prenom);
         $this->settelephone($telephone);
         $this->setfavori($favori);
-    
-       
-
     }
 // ----------------------------------------------partie getter-------------------------------------------------------------------------
     public function getnom()
@@ -43,7 +40,7 @@ class Contacts{
     
         if(!preg_match("/^[A-Za-zÀ-ÖØ-öø-ÿ-]+$/",$nom)){
 
-            echo "Le nom  doit contenir uniquement des lettres alphabétiques.";
+            throw new Exception("Le nom  doit contenir uniquement des lettres alphabétiques.");
         
         }else {
 
@@ -55,7 +52,7 @@ class Contacts{
 
         if (!preg_match("/^[A-Za-zÀ-ÖØ-öø-ÿ-]+$/", $prenom)) {
 
-            echo "Le  prénom doit contenir uniquement des lettres alphabétiques.";
+            throw new Exception("Le  prénom doit contenir uniquement des lettres alphabétiques.");
         
         }else {
             $this->prenom = $prenom;
@@ -66,7 +63,7 @@ class Contacts{
 
         if(!preg_match("/^7[0-9]{8}$/", $telephone)){
 
-            echo "le numero de telephone n'est pas valide.";
+            throw new Exception("le numero de telephone n'est pas valide.");
 
         }else {
 
@@ -78,7 +75,7 @@ class Contacts{
 
         if( $favori!= 0 and $favori!= 1 ){
 
-            echo "le favorie  prendre 1 ou 0";
+            throw new Exception("le favorie  prendre 1 ou 0");
 
         }else {
 
