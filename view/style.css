@@ -1,0 +1,188 @@
+body{
+    background: rgba(178, 141, 141, 0.21);
+
+}
+.bloc{
+    display: flex;
+   
+
+}
+.formulaire{
+    /* border: 6px solid black; */
+    border: 2px solid black;
+    width: 600px;
+    /* /* margin-left: 20%; */
+    /* margin-right: 20%; */ 
+    margin-top:10%;
+}
+.formulaire h1{
+    text-align: center;
+   background-color: #0091ff;
+   color: white;
+   margin-top: -2px;
+   height: 60px;
+}
+.formulaire form
+{
+    /* border: 2px solid #0091ff; */
+    margin-left: 10%;
+    margin-right:15%;
+}
+
+.entre  .entre1{
+    height: 30px;
+    width: 450px;
+    margin-top:20px ;
+}
+.boutton{
+    margin-top: 5%;
+    margin-left: 90px;
+}
+.boutton input{
+    height:40px;
+    width:90px;
+    margin-right:10%;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+
+}
+.boutton .B1{
+    background-color: rgba(14, 211, 14, 0.687);
+    color: white;
+    font-weight: 700;
+    margin-left: 100px;
+
+}
+
+
+
+/* --------------------------------fihier Listes connect.php--------------------------- */
+.tableau{
+    /* border: 6px solid black; */
+    margin-left: 10%; 
+    margin-top:10%;
+    /* margin-right: 20%; */
+    
+}
+.tableau h1{
+    /* color: white;
+    background-color:#0091ff;
+    text-align: center; */
+    text-align: center;
+    background-color: #0091ff;
+    color: white;
+    margin-top: -2px;
+    height: 60px;
+    /* width: 10%; */
+   
+} 
+table{
+
+    border-collapse: collapse;
+    /* width: 10%; */
+    
+} 
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+   
+
+}
+
+th {
+    background-color: #0091ff;
+    color: white;
+}
+td{ 
+/* border: 2px solid black; */
+height: 30px;
+background-color: white;
+}
+/* .boutton input{
+    height:40px;
+    width:90px;
+    margin-right:10%;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+
+} */
+.boutton1{
+    display: flex;
+    
+}
+
+.boutton1 button{
+    height:40px;
+    width:70px;
+    /* margin-right:10%; */
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    
+    
+}
+.boutton1 .B2{
+    background-color:rgba(218, 20, 20, 0.628);
+    color: white;
+    font-weight: 700;
+}
+.boutton1 .B3{
+    background-color:rgba(218, 20, 20, 0.628);
+    color: white;
+    font-weight: 700;
+    margin-left: 20px;
+    width: 100px;
+
+}
+/* -------------------------------------formulaire de modification--------------------------------- */
+
+.formModi {
+    
+    border: 2px solid black;
+    width: 600px;
+    margin-left: 30%; 
+    margin-top:10%;
+    
+}
+.formModi h1{
+    text-align: center;
+   background-color: #0091ff;
+   color: white;
+   margin-top: -2px;
+   height: 60px;
+}
+.formModi form
+{
+   
+    margin-left: 10%;
+    margin-right:15%;
+}
+
+.entre3  .entre2{
+    height: 30px;
+    width: 450px;
+    margin-top:20px ;
+}
+.boutton4{
+    margin-top: 5%;
+    margin-left: 90px;
+}
+.boutton4 input{
+    height:40px;
+    width:90px;
+    margin-right:10%;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+
+}
+.boutton4 .B3{
+    background-color: rgba(14, 211, 14, 0.687);
+    color: white;
+    font-weight: 700;
+    margin-left: 100px;
+
+}
