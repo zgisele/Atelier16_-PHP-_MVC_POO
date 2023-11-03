@@ -1,6 +1,6 @@
 <?php
 require('classeBase.php');
-class Ajouter{
+class Contacts{
     private $nom;
     private $prenom;
     private $telephone;
@@ -90,7 +90,7 @@ class Ajouter{
     // ---------------------les fonctions particulier----------------------------
     // ---------------------les fonctions ajout de contact----------------------------
 
-    public function Ajout($db){
+    public function AjoutContact($db){
 
         $sqlQuery ="INSERT INTO `contacts` (nom,prenom,telephone,favori) VALUES ('".$this->nom."','".$this->prenom."','".$this->telephone."','".$this->favori."')";
 
@@ -194,6 +194,6 @@ public function modifierContact($nom,$prenom,$telephone,$favori,$id_contact,$db)
 
  
 
-// $Ajouter1 = new Ajouter("Florant","ZOUNDETE",776547557);
-// $Ajouter1->Ajout($db);
+// $Contacts1 = new Ajouter("Florant","ZOUNDETE",776547557);
+// $Contacts1->Ajout($db);
 

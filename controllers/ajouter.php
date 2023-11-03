@@ -14,8 +14,8 @@ if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['telephone'])
     }else{
 
          include '../modeles/classeAjout.php';
-        $Ajouter1 = new Ajouter($nom,$prenom,$telephone,$favori);
-        $Ajouter1->Ajout($db);
+        $Contacts1 = new Contacts($nom,$prenom,$telephone,$favori);
+        $Contacts1->AjoutContact($db);
 
      }
 }
@@ -31,8 +31,8 @@ if (isset($_POST["supprimer"])){
     }else{
 
         include '../modeles/classeAjout.php';
-        $Ajouter1 = new Ajouter("falu","mop","775675641",1);
-        $Ajouter1->SuppressionContact($supprimer,$db);
+        $Contacts1 = new Contacts("falu","mop","775675641",1);
+        $Contacts1->SuppressionContact($supprimer,$db);
     }
     
 // -------------------------------------Mise a jour (Modifier)----------------------------------------------
@@ -47,8 +47,8 @@ if (isset($_POST["modifier"])){
     }else{
 
  include '../modeles/classeAjout.php';
-        $Ajouter1 = new Ajouter($nom="",$prenom="",$telephone="",$favori="");
-        $Ajouter1->modifierContact($nom,$prenom,$telephone,$favori,$id_contact,$db);
+    $Contacts1 = new Contacts($nom="",$prenom="",$telephone="",$favori="");
+    $Contacts1->modifierContact($nom,$prenom,$telephone,$favori,$id_contact,$db);
     }
 
 }

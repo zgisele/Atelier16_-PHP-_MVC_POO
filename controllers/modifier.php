@@ -16,8 +16,8 @@ if (empty($nom) or empty($prenom) or empty( $telephone) ){
 }else{
 
 
-    $Ajouter1 = new Ajouter($nom,$prenom,$telephone,$favori);
-    $Ajouter1->modifierContact($nom,$prenom,$telephone,$favori,$id,$db);
+    $Contacts1 = new Contacts($nom,$prenom,$telephone,$favori);
+    $Contacts1->modifierContact($nom,$prenom,$telephone,$favori,$id,$db);
 
 } 
 }
