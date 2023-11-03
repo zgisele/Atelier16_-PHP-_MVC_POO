@@ -69,7 +69,7 @@
                                 <button name="modifier" class="B2" value="<?= $utilisateur['id_contact']; ?>" >Modifier</button>    
                             </form> 
                               <!--supprimer -->
-                            <form action="../controllers/ajouter.php" method="POST">
+                            <form action="../controllers/supprimer.php" method="POST">
                                 <button name="supprimer" class="B3" value="<?= $utilisateur['id_contact']; ?>" >Supprimer</button>
                             </form> 
                         </div>

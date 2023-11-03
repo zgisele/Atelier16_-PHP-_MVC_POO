@@ -1,5 +1,5 @@
 <?php
-
+// --------------------------------Ajout de Contacte-----------------------------------------
 if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['telephone']) && isset($_POST['favori'])){
 
     $nom = $_POST['nom'];
@@ -20,20 +20,7 @@ if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['telephone'])
      }
 }
 
-// -------------------------------------supression----------------------------------------------
-if (isset($_POST["supprimer"])){
-    $supprimer=$_POST["supprimer"];
 
-    if(empty($supprimer)){
-
-        echo 'veillez renseigner les champs';//quant les variables sont vides
-
-    }else{
-
-        include '../modeles/classeAjout.php';
-        $Contacts1 = new Contacts("falu","mop","775675641",1);
-        $Contacts1->SuppressionContact($supprimer,$db);
-    }
     
 // -------------------------------------Mise a jour (Modifier)----------------------------------------------
 if (isset($_POST["modifier"])){
@@ -52,7 +39,7 @@ if (isset($_POST["modifier"])){
     }
 
 }
-}   
+ 
 
  
 ?>
